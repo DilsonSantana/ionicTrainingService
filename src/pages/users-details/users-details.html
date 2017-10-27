@@ -1,0 +1,94 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{user.username}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-card>
+
+      <ion-item>
+        <ion-label stacked>Nome</ion-label>
+        <ion-input type="text" disabled value="{{user.name}}"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Apelido</ion-label>
+        <ion-input type="text" value="{{user.username}}" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Email</ion-label>
+        <ion-input type="text" value="{{user.email}}" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Telefone</ion-label>
+        <ion-input type=" text " value="{{user.phone}}" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Web Site</ion-label>
+        <ion-input type="text" value="{{user.website}}" disabled></ion-input>
+      </ion-item>
+
+    </ion-card>
+
+    <ion-card>
+
+      <ion-card-header>
+        Endereco
+      </ion-card-header>
+
+      <ion-item>
+        <ion-label stacked>Logradouro</ion-label>
+        <ion-input type="text" value="{{user.address.street}}" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Complemento</ion-label>
+        <ion-input type="text" value="{{user.address.suite}}" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Cidade</ion-label>
+        <ion-input type=" text " value="{{user.address.city}}" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>CEP</ion-label>
+        <ion-input type="text" value="{{user.address.zipcode}}" disabled></ion-input>
+      </ion-item>
+
+    </ion-card>
+
+    <ion-card>
+
+      <ion-card-header>
+        Empresa
+      </ion-card-header>
+
+      <ion-item>
+        <ion-label stacked>Nome</ion-label>
+        <ion-input type="text" value="{{user.company.name}}" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>catchPhrase</ion-label>
+        <ion-input type="text" value="{{user.company.catchPhrase}}" disabled></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label stacked>Bs</ion-label>
+        <ion-input type=" text " value="{{user.company.bs}}" disabled></ion-input>
+      </ion-item>
+
+    </ion-card>
+
+  </ion-list>
+</ion-content>

@@ -1,0 +1,46 @@
+page-login {
+    div.validator-login{
+        color: red;
+        padding-left: 15px;
+        font-size: 12px;
+        padding-top: 5px;
+    }
+
+    .check-validator{
+        color: green;
+    }
+
+    .input{
+        border-color: green;
+        border: 1px;
+    }
+
+    .login-picture{
+         align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .login-imagem{
+        width: 1%; 
+        height: 50px;
+    }
+
+    /* Workaround to hide window phone default validation colors */
+ion-item.item-wp.item-input.input-has-focus .text-input,
+ion-item.item-wp.item-input.ng-valid.input-has-value:not(.input-has-focus) .text-input,
+ion-item.item-wp.item-input.ng-invalid.ng-touched:not(.input-has-focus) .text-input {
+    border: 2px solid #ffffff;
+}
+
+/* Workaround to hide android default validation colors */
+ion-item.item-md.item-input.input-has-focus .item-inner,
+ion-item.item-md.item-input.ng-valid.input-has-value:not(.input-has-focus) .item-inner,
+ion-item.item-md.item-input.ng-invalid.ng-touched:not(.input-has-focus) .item-inner {
+    border-bottom-color: #ffffff;
+    box-shadow: none;
+}
+
+}
